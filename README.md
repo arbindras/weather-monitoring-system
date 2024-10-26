@@ -47,10 +47,10 @@
 ## Installation
 Prerequisites
    - Node.js (v14.x or higher)
-   - OpenWeatherMap API Key (sign up [here](https://openweathermap.org/)
+   - OpenWeatherMap API Key (sign up [here](https://openweathermap.org/))
 ## Steps to Install
 1. Clone the repository:
-   - git clone [https://github.com/yourusername/weather-monitoring-backend.git](https://github.com/arbindras/weather-monitoring-system.git)
+   - git clone [(https://github.com/arbindras/weather-monitoring-system.git)](https://github.com/arbindras/weather-monitoring-system.git)
    - cd weather-monitoring-backend
 2. Install dependencies:
    - `npm install`
