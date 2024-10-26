@@ -1,25 +1,25 @@
 # Weather Monitoring System
 ## Table of Contents
-   -Project Overview
-   -Features
-   -Folder Structure
-   -Installation
-   -Configuration
-   -Image of Result
+   - Project Overview
+   - Features
+   - Folder Structure
+   - Installation
+   - Configuration
+   - Image of Result
 ## Project Overview
-   The backend fetches real-time weather data from the OpenWeatherMap API at regular intervals for major Indian cities (Delhi, Mumbai, Chennai, Bangalore, Kolkata, Hyderabad).
-   It performs data rollups and aggregates daily summaries for each city, including:
-      -Average, minimum, and maximum temperatures.
-      -Dominant weather condition.
-      -Alerts for exceeding configurable thresholds.
-   This backend can also trigger alerts when user-defined thresholds are breached (e.g., temperature exceeds 35°C for two consecutive updates).
+   - The backend fetches real-time weather data from the OpenWeatherMap API at regular intervals for major Indian cities (Delhi, Mumbai, Chennai, Bangalore, Kolkata, Hyderabad).
+   - It performs data rollups and aggregates daily summaries for each city, including:
+      - Average, minimum, and maximum temperatures.
+      - Dominant weather condition.
+      - Alerts for exceeding configurable thresholds.
+   - This backend can also trigger alerts when user-defined thresholds are breached (e.g., temperature exceeds 35°C for two consecutive updates).
 
 ## Features
-   -Weather Data Fetching: Periodically retrieves weather data from OpenWeatherMap.
-   -Data Rollups and Aggregates: Calculates daily averages, maximums, minimums, and dominant weather conditions.
-   -Alert System: Notifies when specific thresholds are exceeded, such as high temperatures.
-   -Data Persistence: Stores daily summaries in a database for further analysis.
-   -Configurable Fetch Intervals: Easily adjust the interval for API calls to OpenWeatherMap.
+   - Weather Data Fetching: Periodically retrieves weather data from OpenWeatherMap.
+   - Data Rollups and Aggregates: Calculates daily averages, maximums, minimums, and dominant weather conditions.
+   - Alert System: Notifies when specific thresholds are exceeded, such as high temperatures.
+   - Data Persistence: Stores daily summaries in a database for further analysis.
+   - Configurable Fetch Intervals: Easily adjust the interval for API calls to OpenWeatherMap.
 
 ## Folder Structure
          -/weather-monitoring-system
@@ -46,24 +46,24 @@
          -└── package.json         # Project dependencies and scripts
 ## Installation
 Prerequisites
-   -Node.js (v14.x or higher)
-   -OpenWeatherMap API Key (sign up here)
+   - Node.js (v14.x or higher)
+   - OpenWeatherMap API Key (sign up [here](https://openweathermap.org/)
 ## Steps to Install
 1. Clone the repository:
-   - git clone https://github.com/yourusername/weather-monitoring-backend.git
-   -cd weather-monitoring-backend
+   - git clone [https://github.com/yourusername/weather-monitoring-backend.git](https://github.com/arbindras/weather-monitoring-system.git)
+   - cd weather-monitoring-backend
 2. Install dependencies:
-   -`npm install`
+   - `npm install`
 3. Create a .env file in the root directory and add your OpenWeatherMap API key and MongoDB connection string:
-   -API_KEY=your_openweathermap_api_key
+   - API_KEY=your_openweathermap_api_key
 4. Run the server
-      `npm start`
-      -The server will start on port 3000 by default.
+   - `npm start`
+   - The server will start on port 3000 by default.
 ## Configuration
-   -API Key: Set your OpenWeatherMap API key in the .env file.
-   -Fetch Interval: You can configure the fetch interval for the weather data in `config/config.js`.
-   -Alert Thresholds: Set the alert thresholds (e.g., max temperature) in `config/config.js`.
-   -Example configuration in config/config.js:
+   - API Key: Set your OpenWeatherMap API key in the .env file.
+   - Fetch Interval: You can configure the fetch interval for the weather data in `config/config.js`.
+   - Alert Thresholds: Set the alert thresholds (e.g., max temperature) in `config/config.js`.
+   - Example configuration in config/config.js:
    ```
       `module.exports = {
       openWeatherMap: {
