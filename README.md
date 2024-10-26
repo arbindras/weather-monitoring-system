@@ -61,11 +61,12 @@ Prerequisites
       -The server will start on port 3000 by default.
 ## Configuration
    -API Key: Set your OpenWeatherMap API key in the .env file.
-   -Fetch Interval: You can configure the fetch interval for the weather data in config/config.js.
-   -Alert Thresholds: Set the alert thresholds (e.g., max temperature) in config/config.js.
+   -Fetch Interval: You can configure the fetch interval for the weather data in `config/config.js`.
+   -Alert Thresholds: Set the alert thresholds (e.g., max temperature) in `config/config.js`.
    -Example configuration in config/config.js:
-   `module.exports = {
-     openWeatherMap: {
+   ```
+      `module.exports = {
+      openWeatherMap: {
        apiKey: process.env.API_KEY,
        cities: ['Delhi', 'Mumbai', 'Chennai', 'Bangalore', 'Kolkata', 'Hyderabad'],
        fetchInterval: 300000, // Fetch data every 5 minutes
@@ -73,6 +74,7 @@ Prerequisites
      thresholds: {
        maxTemperature: 35, // Alert if temperature exceeds 35°C
      },
-   };`
+   };
+```
 ## Image of Result
 ![Screenshot 2024-10-26 143420](https://github.com/user-attachments/assets/ff5bbe26-5109-4ba8-9199-5d3227875463)
